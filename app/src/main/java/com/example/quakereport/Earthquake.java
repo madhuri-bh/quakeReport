@@ -1,21 +1,24 @@
 package com.example.quakereport;
 
 class Earthquake {
-    private String Magnitude;
+    private double Magnitude;
     private String Location;
-    private String Date;
+    private String Url;
+    private long TimeInMilliSeconds;
 
-    public Earthquake(String magnitude, String location, String date) {
+    public Earthquake(double magnitude, String location, long timeInMilliSeconds, String url) {
         Magnitude = magnitude;
         Location = location;
-        Date = date;
+        TimeInMilliSeconds = timeInMilliSeconds;
+        Url = url;
     }
 
-    public String getMagnitude() {
+
+    public double getMagnitude() {
         return Magnitude;
     }
 
-    public void setMagnitude(String magnitude) {
+    public void setMagnitude(double magnitude) {
         Magnitude = magnitude;
     }
 
@@ -23,15 +26,24 @@ class Earthquake {
         return Location;
     }
 
-    public void setLocation(String location) {
-        Location = location;
+    public void setPrimaryLocationLocation(String primaryLocation) {
+        Location = primaryLocation;
+
     }
 
-    public String getDate() {
-        return Date;
+    public long getTimeInMilliSeconds() {
+        return TimeInMilliSeconds;
     }
 
-    public void setDate(String date) {
-        Date = date;
+    public void setTimeInMilliSeconds(long timeInMilliSeconds) {
+        TimeInMilliSeconds = timeInMilliSeconds;
+    }
+
+    public String getUrl() {
+        return Url;
+    }
+
+    public void setUrl(String url) {
+        Url = url;
     }
 }
