@@ -1,6 +1,5 @@
 package com.example.quakereport;
 
-import android.os.AsyncTask;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -124,7 +123,6 @@ public final class QueryUtils {
         // Catch the exception so the app doesn't crash, and print the error message to the logs.
         try {
 
-            // TODO: Parse the response given by the SAMPLE_JSON_RESPONSE string and
             JSONObject baseJsonResponse = new JSONObject(earthquakeJSON);
             JSONArray earthquakeArray = baseJsonResponse.getJSONArray("features");
             for (int i = 0; i < earthquakeArray.length(); i++) {
@@ -152,5 +150,4 @@ public final class QueryUtils {
         return earthquakes;
 
     }
-
 }
