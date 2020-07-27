@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.quakereport.EarthquakeActivity">
 
-<item
-    android:id="@+id/action_settings"
-    android:title="@string/settings_title"
-    android:orderInCategory="1"
-    app:showAsAction="ifRoom"
-    />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_filter"
+        android:title="@string/settings_title"
+        app:showAsAction="ifRoom" />
+
 </menu>
